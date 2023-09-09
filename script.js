@@ -11,10 +11,10 @@ function toggleLeftSide() {
 
         setTimeout(function () {
             for (var i = 0; i < h2Elements.length; i++) {
-                h2Elements[i].style.transition = "opacity 0.5s";
+                h2Elements[i].style.transition = "opacity 0.3s";
                 h2Elements[i].style.opacity = "1";
             }
-        }, 500);
+        }, 200);
 
     } else {
         leftSide.style.width = "47px";
