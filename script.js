@@ -1,29 +1,15 @@
-function toggleLeftSide() {
-    var leftSide = document.querySelector(".left-side");
-    var rightSide = document.querySelector(".right-side");
-    var button = document.querySelector(".btn");
-    var h2Elements = document.querySelectorAll("h2");
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
 
-    if (leftSide.style.width === "47px") {
-        leftSide.style.width = "150px";
-        rightSide.style.width = "calc(100% - 150px)";
-        button.style.width = "150px";
-
-        setTimeout(function () {
-            for (var i = 0; i < h2Elements.length; i++) {
-                h2Elements[i].style.transition = "opacity 0.3s";
-                h2Elements[i].style.opacity = "1";
-            }
-        }, 200);
-
-    } else {
-        leftSide.style.width = "47px";
-        rightSide.style.width = "calc(100% - 47px)";
-        button.style.width = "47px";
-
-        for (var i = 0; i < h2Elements.length; i++) {
-            h2Elements[i].style.transition = "opacity 0s";
-            h2Elements[i].style.opacity = "0";
-        }
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
     }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
 }
