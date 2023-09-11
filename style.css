@@ -394,3 +394,56 @@ nav .fas{
         margin-right: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+#contact {
+    background: #ff9727;
+    padding: 30px 0;
+    color: white;
+}
+
+#contact .container {
+    text-align: center;
+}
+
+#contact h1.title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #B6E1E7;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#contact ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact li a:hover {
+    color: #528f97;
+    font-size: 20px;
+    transition: 0.5s;
+}
